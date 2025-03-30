@@ -14,6 +14,10 @@ openai.api_key = OPENAI_API_KEY
 # Create FastAPI instance
 app = FastAPI()
 
+@app.get("/")
+def home():
+    return {"message": "The AI resume service is working!"}
+
 @app.post("/optimize_resume/")
 async def optimize_resume(resume: UploadFile = File(...), job_description: str = Form(...)):
     try:

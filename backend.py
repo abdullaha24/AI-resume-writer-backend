@@ -33,6 +33,8 @@ async def optimize_resume(resume: UploadFile = File(...), job_description: str =
         prompt = f"""
     You are an expert resume writer. Rewrite the following resume so that it aligns with the job description while sounding natural and written by a human. 
     - Use **concise yet impactful bullet points**  
+    - Highlight the quantifiable results and technologies used in the experience bullet points
+    - Make it sound like human written
     - **Prioritize achievements over responsibilities**  
     - Use **action verbs** to describe accomplishments  
     - Ensure the resume is **ATS-friendly** but still readable  

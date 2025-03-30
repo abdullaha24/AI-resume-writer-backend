@@ -6,3 +6,4 @@ docx2txt
 python-docx
 streamlit
 requests
+python-multipart
